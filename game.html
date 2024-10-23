@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Neon Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div id="mode-selection" class="screen">
+            <h2>Choose Game Mode</h2>
+            <div class="button-group">
+                <button id="multiplayerBtn" class="glass-btn">Multiplayer</button>
+                <button id="aiBtn" class="glass-btn">Play Against AI</button>
+            </div>
+        </div>
+
+        <div id="player-selection" class="screen hidden">
+            <h2>Choose Your Player</h2>
+            <div class="button-group">
+                <button id="chooseX" class="glass-btn player-x">X</button>
+                <button id="chooseO" class="glass-btn player-o">O</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div id="scoreBoard">
+                <div class="player-x">X Wins: <span id="xScore">0</span></div>
+                <div class="player-o">O Wins: <span id="oScore">0</span></div>
+                <div>Draws: <span id="drawScore">0</span></div>
+            </div>
+            <div id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div id="message"></div>
+            <div class="button-group">
+                <button id="restartButton" class="glass-btn">Restart Game</button>
+                <button id="changeMode" class="glass-btn">Change Mode</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
